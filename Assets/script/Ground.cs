@@ -8,12 +8,19 @@ public class Ground : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision) // Cuando colisiona con algún objeto
     {
-        isGround = true;
+        // Comprobar si el objeto tiene la etiqueta "Suelo"
+        if (collision.CompareTag("Suelo"))
+        {
+            isGround = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        isGround = false;
+        // Comprobar si el objeto que sale tiene la etiqueta "Suelo"
+        if (collision.CompareTag("Suelo"))
+        {
+            isGround = false;
+        }
     }
-
 }
