@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Suelo
   - Enemigo
+  - BalaAbeja
   layers:
   - Default
   - TransparentFX
